@@ -5,14 +5,14 @@ namespace FinalProgIII.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<FinalProgIII.Models.ApplicationDbContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<FinalProgIII.Models.DataBase>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
         }
 
-        protected override void Seed(FinalProgIII.Models.ApplicationDbContext context)
+        protected override void Seed(FinalProgIII.Models.DataBase context)
         {
             //  This method will be called after migrating to the latest version.
 

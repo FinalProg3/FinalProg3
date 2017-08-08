@@ -13,8 +13,5 @@ namespace FinalProgIII.Models
         public string Nombre { get; set; }
         public string Direccion { get; set; }
         public string Telefono { get; set; }
-        //public string Foto { get; set; }
-        public decimal Precio { get; set; }
-        public int Cantidad { get; set; }
     }
 }

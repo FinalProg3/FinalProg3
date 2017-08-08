@@ -13,6 +13,7 @@ namespace FinalProgIII.Models
         public int ClienteID { get; set; }
         public int ProductoID { get; set; }
         public int Cantidad { get; set; }
+        public System.DateTime FechaPedido { get; set; }
         public decimal PrecioTotal { get; set; }
     }
 }
