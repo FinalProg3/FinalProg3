@@ -15,6 +15,8 @@ namespace FinalProgIII.Models
         public DbSet<Clientes> Clientes { get; set; }
         public DbSet<Proveedor> Proveedor { get; set; }
         public DbSet<Producto> Productos { get; set; }
-        public DbSet<Ventas> Ventas { get; set; }
+        public DbSet<Factura> Factura { get; set; }
+
+        public System.Data.Entity.DbSet<FinalProgIII.Models.ViewModelFactura> ViewModelFacturas { get; set; }
     }
 }

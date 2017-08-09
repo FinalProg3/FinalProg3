@@ -1,0 +1,38 @@
+﻿@model IEnumerable<FinalProgIII.Models.Producto>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Juegos</th>
+            <th>Proveedor</th>
+            <th>Precio</th>
+        </tr>
+    </thead>
+
+@foreach (var item in Model)
+{
+    <tbody>
+        <tr>
+            <td>@item.Nombre</td>
+            <td>@item.Proveedor.Nombre</td>
+            <td>@item.Precio</td>
+
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.ProductoID }) |
+                @Html.ActionLink("Details", "Details", new { id = item.ProductoID }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.ProductoID })
+            </td>
+        </tr>
+    </tbody>
+}
+
+</table>

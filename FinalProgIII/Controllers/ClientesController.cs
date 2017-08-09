@@ -7,13 +7,13 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using FinalProgIII.Models;
+using System.IO;
 
 namespace FinalProgIII.Controllers
 {
     public class ClientesController : Controller
     {
         private DataBase db = new DataBase();
-            //ACARIO ES LA PUTA LECHE
         // GET: Clientes
         public ActionResult Index()
         {
@@ -48,7 +48,7 @@ namespace FinalProgIII.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "ClientesID,Nombre,Direccion,Email,Telefono")] Clientes clientes)
         {
-            if (ModelState.IsValid)
+          if (ModelState.IsValid)
             {
                 db.Clientes.Add(clientes);
                 db.SaveChanges();

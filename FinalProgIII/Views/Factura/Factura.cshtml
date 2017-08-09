@@ -1,0 +1,12 @@
+﻿@model FinalProgIII.Models.ViewModelFactura
+
+@{
+    ViewBag.Title = "Factura";
+}
+
+<h2>Factura</h2>
+
+<div class="jumbotron" >
+    @Html.DropDownList("ProductoID", null, htmlAttributes: new { @class = "form-control" })
+
+</div>
